@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    tools:context=".ResultName">
+
+
+
+    <ProgressBar
+        android:id="@+id/idLoadingPB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints"  />
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/head"
+            android:layoutDirection="rtl"
+
+            android:stretchColumns="*">
+
+            <TableRow
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/cardview_dark_background"
+                >
+
+
+
+                <TextView
+                    android:text="رقم المشترك "
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numm"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.20"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/idTVResponse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.80"
+                    android:gravity="clip_horizontal|center|clip_vertical|center_horizontal"
+                    android:paddingRight="3dp"
+                    android:text="الاسم "
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_width="wrap_content" android:gravity="center_horizontal"
+
+
+                tools:ignore="MissingConstraints"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+</androidx.cardview.widget.CardView>

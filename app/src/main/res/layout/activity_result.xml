@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".result"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <!--progress bar for loading indicator-->
+
+
+
+
+
+    <ProgressBar
+        android:id="@+id/idPB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:id="@+id/table1"
+        android:layout_height="wrap_content"
+      >
+
+
+        <TableRow
+            android:id="@+id/tableRowd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60px"
+            android:paddingTop="100px">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text=" اسم المشترك "
+
+
+                android:textSize="19sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/test1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="right|fill_horizontal"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRowid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60px"
+            >
+
+            <TextView
+                android:id="@+id/tvid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text=" رقم الوثيقة "
+                android:textSize="19sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/testid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="right|fill_horizontal"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60px">
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text=" رقم الموبايل  "
+                android:textSize="19sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/test2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="fill_horizontal"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40px">
+
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text=" رقم المشترك  "
+                android:textSize="19sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/test3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="fill_horizontal"
+                android:text=""
+                android:textSize="17dp"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+
+                tools:ignore="MissingConstraints" />
+
+        </TableRow>
+
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:id="@+id/table2"
+
+            android:stretchColumns="*">
+
+            <TableRow
+
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:background="@color/cardview_dark_background"
+                >
+
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.16"
+                    android:gravity="center"
+                    android:paddingRight="3dp"
+
+                    android:text="نوع الخدمة  "
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/numm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:gravity="center"
+                    android:text="رقم الخدمة "
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:text="الرصيد"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/coin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:gravity="center"
+                    android:text="العملة"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hod"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:gravity="center"
+                    android:text="حوض"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:gravity="center"
+                    android:text="الحي"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/qetaa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:gravity="center"
+                    android:text="قطعة"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="DuplicateIds"
+            android:paddingBottom="50px">
+
+
+            <!--recycler view to display our data-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idRVCourses"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_width="wrap_content" android:gravity="center_horizontal"
+
+                android:visibility="gone"
+                tools:ignore="MissingConstraints"
+                />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+
+</LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

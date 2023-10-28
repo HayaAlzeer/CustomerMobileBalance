@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchby">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+
+        <TableRow
+            android:id="@+id/tableRowd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100px"
+            android:paddingTop="100px">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_height="wrap_content"
+                android:text="ادخل رقم الهوية  "
+                android:textSize="24sp"
+                android:layout_weight="1" android:layout_width="match_parent" android:gravity="center_horizontal"/>
+            />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="200px">
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_width="match_parent" android:gravity="center_horizontal"
+                android:ems="10"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+
+
+                android:inputType="phone" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="DuplicateIds"
+            android:paddingBottom="50px">
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:backgroundTint="@color/green"
+
+                android:gravity="center_horizontal"
+                android:text="بحث"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+</LinearLayout>

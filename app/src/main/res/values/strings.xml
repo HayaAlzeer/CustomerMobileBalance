@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name"> استعلام رصيد</string>
+    <string name="underline"><![CDATA[This is an <u>underline</u>.]]></string>
+
+</resources>
